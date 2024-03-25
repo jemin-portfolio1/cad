@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: 'Pretendard-Regular';
+  font-size: 16px;
+  line-height: 26px;
+  color: #333;
+  background: url(../images/bg.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+
+#main {
+  width: 1440px;
+  margin: auto;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  margin-bottom: 5%;
+  color: #fff;
+  text-shadow: -2px 0 0 #333, 2px 0 0 #333, 0 -2px 0 #333, 0 2px 0 #333;
+}
+
+.box{
+  width: 80%;
+  margin: 10% auto;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+/* 탭메뉴 꾸미기 */
+#tab {
+  width: 80%;
+  margin: 7% auto;
+  overflow: hidden;
+}
+
+.tabnav {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tabnav li {
+  float: left;
+  justify-content: space-around;
+  width: 30%;
+  text-align: center;
+  border: #333 1px solid;
+}
+
+.tabnav li a {
+  display: block;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #333;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.b_767{
+  display: none;
+}
+
+.hide{
+  display: none;
+}
+
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+.tabnav li .active {
+  background: #333;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tabnav li a:hover,
+.tabnav li a.active {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 탭컨테츠 꾸미기 */
+.tabcontent {
+  margin-top: 5%;
+  position: relative;
+}
+
+@media(max-width: 1919px)/*pc 1920-1080*/ {
+  #main {
+    width: 90%;
+  }
+  #tab {
+    margin: 10% auto;
+  }
+  .title{
+    margin-bottom: 5%;
+  }
+  .tabcontent{
+    margin-top: 5%;
+  }
+}
+
+@media(max-width: 1535px)/*pc 1536-864*/ {
+  #main {
+    width: 80%;
+  }
+  #tab {
+    margin: 7% auto;
+  }
+  .box{
+    margin: 7% auto;
+  }
+  .tabcontent{
+    margin-top: 3%;
+  }
+  .tabnav li a {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 1023px)/*tab 1024-768*/ {
+  #main {
+    width: 100%;
+  }
+  #tab {
+    margin: 15% auto;
+  }
+  .box{
+    margin: 15% auto;
+  }
+  .title{
+    margin-bottom: 15%;
+  }
+  .tabcontent{
+    margin-top: 10%;
+  }
+}
+
+@media(max-width: 767px)/*mb 768-1024*/ {
+  body {
+    background: url(../images/bg_.jpg) center center no-repeat fixed;
+    background-size: cover;
+  }
+  #tab {
+    width: 90%;
+    margin: 25% auto;
+  }
+  .box{
+    width: 90%;
+    margin: 25% auto;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .tabnav {
+    width: 70%;
+  }
+  .tabnav li a {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .b_767{
+    display: block;
+  }
+  .hide{
+    display: block;
+  }
+}
+
+@media(max-width: 499px)/*s mb*/ {
+   .title{
+    font-size: 25px;
+   }
+   .tabnav li a {
+    padding: 3px 0;
+    font-size: 12px;
+  }
+}
